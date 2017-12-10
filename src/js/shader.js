@@ -22,14 +22,14 @@ void main(void) {
 	mask2 = (1. - (1.0 - mask1)*mask);
 
 
-	vec4 currentimageT = texture2D(currentimage, vec2(uv.x - 1.0 + mytime,uv.y*1.5));
-	vec4 oldimageT = texture2D(oldimage, vec2(uv.x + mytime,uv.y*1.5));
+	vec4 currentimageT = texture2D(currentimage, vec2(uv.x - 1.0 + mytime*mytime*mytime,uv.y*1.5));
+	vec4 oldimageT = texture2D(oldimage, vec2(uv.x + mytime*mytime*mytime,uv.y*1.5));
 
 	layer1 = currentimageT.rgb + oldimageT.rgb;
 
 
-	vec4 currentimageT1 = texture2D(currentimage, vec2(uv.x - 1.0 + mytime*mytime*mytime,uv.y*1.5));
-	vec4 oldimageT1 = texture2D(oldimage, vec2(uv.x + mytime*mytime*mytime,uv.y*1.5));
+	vec4 currentimageT1 = texture2D(currentimage, vec2(uv.x - 1.0 + mytime,uv.y*1.5));
+	vec4 oldimageT1 = texture2D(oldimage, vec2(uv.x + mytime,uv.y*1.5));
 
 	layer2 = currentimageT1.rgb + oldimageT1.rgb;
 

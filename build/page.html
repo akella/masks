@@ -13,28 +13,32 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <!-- begin slider -->
-      <div class="slider">
-        <div class="slider__super-wrapper slider__1">
-          <div class="slider__wrap">
-            <div class="slider__current-slide" style="background:url(img/5_.jpg)"></div>
-            <div class="slider__new-slide" style="background:url(img/6_.jpg)"></div>
+      <h1>click anywhere and refresh</h1>
+      <!-- begin SVG -->
+      <div id="svg">
+        <h2>SVG clip-path</h2>
+        <!-- begin slider -->
+        <div class="slider">
+          <div class="slider__super-wrapper slider__1">
+            <div class="slider__wrap">
+              <div class="slider__current-slide" style="background:url(img/5_.jpg)"></div>
+              <div class="slider__new-slide" style="background:url(img/6_.jpg)"></div>
+            </div>
+          </div>
+          <div class="slider__super-wrapper slider__2">
+            <div class="slider__wrap">
+              <div class="slider__current-slide" style="background:url(img/5_.jpg)"></div>
+              <div class="slider__new-slide" style="background:url(img/6_.jpg)"></div>
+            </div>
+          </div>
+          <div class="slider__super-wrapper slider__3">
+            <div class="slider__wrap">
+              <div class="slider__current-slide" style="background:url(img/5_.jpg)"></div>
+              <div class="slider__new-slide" style="background:url(img/6_.jpg)"></div>
+            </div>
           </div>
         </div>
-        <div class="slider__super-wrapper slider__2">
-          <div class="slider__wrap">
-            <div class="slider__current-slide" style="background:url(img/5_.jpg)"></div>
-            <div class="slider__new-slide" style="background:url(img/6_.jpg)"></div>
-          </div>
-        </div>
-        <div class="slider__super-wrapper slider__3">
-          <div class="slider__wrap">
-            <div class="slider__current-slide" style="background:url(img/5_.jpg)"></div>
-            <div class="slider__new-slide" style="background:url(img/6_.jpg)"></div>
-          </div>
-        </div>
-      </div>
-      <!-- end slider --><svg viewBox="0 0 900 600">
+        <!-- end slider --><svg viewBox="0 0 900 600">
 		<defs>
 		  <clipPath id="myPath1" clipPathUnits="objectBoundingBox">
 		    <polygon points="0,0 1,0 1,0.2 0,0.5">
@@ -47,6 +51,12 @@
 		  </clipPath>
 		</defs>
 	</svg> </div>
+      <!-- emd SVG -->
+      <!-- begin WEBGL -->
+      <div id="webgl">
+        <h2>WebGL shader</h2>
+      </div>
+    </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>

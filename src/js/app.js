@@ -29,7 +29,7 @@ $('body').on('click',() => {
 // WEBGL implementation
 
 var app = new PIXI.Application(900,600);
- 	document.body.appendChild(app.view);
+ 	document.getElementById('webgl').appendChild(app.view);
 
 
  	// Create background image
@@ -46,7 +46,7 @@ var app = new PIXI.Application(900,600);
  	// Stop application wait for load to finish
  	app.stop();
 
- 	PIXI.loader.add('shader', '/js/shader.frag')
+ 	PIXI.loader.add('shader', '/js/shader.js')
  	    .load(onLoaded);
 
  	var filter;
