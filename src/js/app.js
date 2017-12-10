@@ -46,7 +46,7 @@ var app = new PIXI.Application(900,600);
  	// Stop application wait for load to finish
  	app.stop();
 
- 	PIXI.loader.add('shader', '/js/shader.js')
+ 	PIXI.loader.add('shader', 'js/shader.js')
  	    .load(onLoaded);
 
  	var filter;
