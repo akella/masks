@@ -1,0 +1,49 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	<!-- begin slider -->
+	<div class="slider">
+		<div class="slider__super-wrapper slider__1">
+			<div class="slider__wrap">
+				<div class="slider__current-slide" style="background:url(img/5_.jpg)"></div>
+				<div class="slider__new-slide" style="background:url(img/6_.jpg)"></div>
+			</div>
+		</div>
+
+		<div class="slider__super-wrapper slider__2">
+			<div class="slider__wrap">
+				<div class="slider__current-slide" style="background:url(img/5_.jpg)"></div>
+				<div class="slider__new-slide" style="background:url(img/6_.jpg)"></div>
+			</div>
+		</div>
+
+		<div class="slider__super-wrapper slider__3">
+			<div class="slider__wrap">
+				<div class="slider__current-slide" style="background:url(img/5_.jpg)"></div>
+				<div class="slider__new-slide" style="background:url(img/6_.jpg)"></div>
+			</div>
+		</div>
+		
+	</div>	
+	<!-- end slider -->
+
+
+	<svg viewBox="0 0 900 600">
+		<defs>
+		  <clipPath id="myPath1" clipPathUnits="objectBoundingBox">
+		    <polygon points="0,0 1,0 1,0.2 0,0.5">
+		  </clipPath>
+		  <clipPath id="myPath2" clipPathUnits="objectBoundingBox">
+		    <polygon points="0,0.5 1,0.2 1,0.6 0,0.9">
+		  </clipPath>
+		  <clipPath id="myPath3" clipPathUnits="objectBoundingBox">
+		    <polygon points="0,0.9 1,0.6 1,1 0,1">
+		  </clipPath>
+		</defs>
+	</svg>
+
+{% endblock %}

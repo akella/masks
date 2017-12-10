@@ -1,0 +1,40 @@
+svg
+	// display: none
+	position: absolute
+	width: 1px 
+	height: 1px 
+.slider
+	width: 900px 
+	height: 600px 
+	position: relative
+	overflow: hidden
+	&__super-wrapper
+		position: absolute
+		width: 900px 
+		height: 600px 
+		top: 0
+		left: 0
+	&__1
+		clip-path: url(#myPath1)
+	&__2
+		clip-path: url(#myPath2)  
+	&__3
+		clip-path: url(#myPath3)  
+	&__wrap
+		position: absolute
+		top: 0
+		left: 0
+		transform: translate(0,0)
+		width: 900px 
+		height: 600px 
+		// transition: transform 2s linear
+		.a &
+			transform: translate(-100%,0)
+	&__current-slide,&__new-slide  
+		position: absolute
+		width: 900px 
+		height: 600px 
+		background-size: cover
+		background-position: 50% 50% 
+	&__new-slide 
+		transform: translate(100%,0)
